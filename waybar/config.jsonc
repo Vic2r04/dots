@@ -4,8 +4,7 @@
   "modules-left": [
     "disk",
     "memory",
-    "cpu",
-    "temperature",
+    "cpu"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -16,7 +15,7 @@
   ],
   "reload_style_on_change": true,
   "clock": {
-    "format": "{:%I:%M:%S}",
+    "format": "{:%H:%M:%S}",
     "interval": 1,
     "tooltip-format": "\n<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar-weeks-pos": "right",
@@ -28,7 +27,7 @@
   "disk": {
     "interval": 30,
     "format": " {percentage_used}%",
-    "path": "/"
+    "path": "/home"
   },
   "memory": {
     "format": " {percentage}%"
@@ -47,14 +46,8 @@
       "█"
     ],
   },
-  "temperature": {
-    "format": " {temperatureC}°C",
-    "format-critical": " {temperatureC}°C",
-    "interval": 1,
-    "critical-threshold": 80,
-  },
   "hyprland/workspaces": {
-    "format": "<span font='18px'>{icon}</span>",
+    "format": "<span font='18px'>{name}: {icon}</span>",
     "format-icons": {
 		"1": "",
 		"2": "",

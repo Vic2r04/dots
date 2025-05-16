@@ -1,7 +1,7 @@
 * {
     border: none;
-    font-size: 16px;
-    font-family: "Firacode nerd Font Mono" ;
+    font-size: 20px;
+    font-family: "Firacode Nerd Font Mono" ;
     min-height: 25px;
     color: #FFFFFF;
 }
@@ -56,36 +56,10 @@ window#waybar {
 #clock {
   padding: 0 5px;
 }
-#pulseaudio {
-  padding-top: 3px;
-}
 
-#temperature.critical,
-#pulseaudio.muted {
-  color: #FF0000;
-  padding-top: 0;
+#cpu {
+  padding-right: 15px;
 }
-
-#battery.charging {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-#battery.warning:not(.charging) {
-    background-color: #ffbe61;
-    color: black;
-}
-
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 
 @keyframes blink {
     to {
